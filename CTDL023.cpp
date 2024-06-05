@@ -12,11 +12,7 @@ void Try(int x)
     for (int i = 1; i <= n; i++)
     {
         if (c1[i] == 0 && c2[i + x] == 0 && c3[x - i + n] == 0)
-        {
-            c1[i] = c2[i + x] = c3[x - i + n] = 1;
-            Try(x + 1);
-            c1[i] = c2[i + x] = c3[x - i + n] = 0;
-        }
+      
     }
 }
 int main()
